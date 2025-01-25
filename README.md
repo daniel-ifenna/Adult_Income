@@ -44,12 +44,12 @@ The dataset reveals a significant income disparity, with 75.2% (33,973) of indiv
 ![Age Distribution](images/Distribution%20of%20age.png)
 - Observations: Most young people within the age gap of 20-40 years earn <=$50,000 and above 50 - 60 years earn >$50,000. But, We see that after the age of 60, the record for those earning  begins to reduce sharply.
 
-![Gender by Income](https://github.com/daniel-ifenna/Adult_Income/blob/bb3c722774507ddde2730a5907ba60cbb6c81599/images/Gender%20vs%20income.png)
+![Gender by Income](images/Gender%20vs%20income.png)
 - Observations: The graph shows that about 10% of the female population earn above $50,000 while about 25% of men earn above $50,000.
 
-![Hour.per.week. by Income](https://github.com/daniel-ifenna/Adult_Income/blob/bb3c722774507ddde2730a5907ba60cbb6c81599/images/Box%20plot%20hours%20per%20week%20over%20income.png)
+![Hour.per.week. by Income](images/Box%20plot%20hours%20per%20week%20over%20income.png)
  - Observations: People earning above $50,000 tend to work more hours in the year than those earning less than or equal to $50,000.
-                - we also see that the median for those earning above $50,000 is higher than those who earn less than equals to $50,000.
+ -  we also see that the median for those earning above $50,000 is higher than those who earn less than equals to $50,000.
 
 ### Building Logistics Regression Model for prediction.
 ~~~{r}
@@ -77,7 +77,7 @@ Y<-sum(diag(s))/sum(s)
 Accuracy<- round(Y*100, digits = 1)
 Accuracy
 ~~~
-![Accuracy Percentage for Logistics Regression](https://github.com/daniel-ifenna/Adult_Income/blob/82b13e1e6b4a4d1afc3abf06635342c71529a184/images/Screenshot%202025-01-25%20190124.png)
+![Accuracy Percentage for Logistics Regression](images/Screenshot%202025-01-25%20190124.png)
   - As seen in the logistics regression model gives us an 84% Test Accuracy.
 
 
