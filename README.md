@@ -41,7 +41,7 @@ Variables:
 ## Let's Analyze
 The dataset reveals a significant income disparity, with 75.2% (33,973) of individuals earning ≤$50,000 and 24.8% (11,202) earning >$50,000.
 ### Visualization
-![Age Distribution](https://github.com/daniel-ifenna/Adult_Income/blob/bb3c722774507ddde2730a5907ba60cbb6c81599/images/Distribution%20of%20age.png)
+![Age Distribution](images/Distribution%20of%20age.png)
 - Observations: Most young people within the age gap of 20-40 years earn <=$50,000 and above 50 - 60 years earn >$50,000. But, We see that after the age of 60, the record for those earning  begins to reduce sharply.
 
 ![Gender by Income](https://github.com/daniel-ifenna/Adult_Income/blob/bb3c722774507ddde2730a5907ba60cbb6c81599/images/Gender%20vs%20income.png)
