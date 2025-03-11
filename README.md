@@ -19,7 +19,7 @@ After building the model for prediction, then I went on to split the data  into 
 
 
 
-![](https://github.com/daniel-ifenna/Adult_Income/blob/e8200fe44d66d76042fcebdfb380b2d6ed372e30/Logistic%20interpretation.png)
+![](Logistic%20interpretation.png)
 
 
 
