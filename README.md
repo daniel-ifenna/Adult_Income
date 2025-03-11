@@ -18,15 +18,17 @@ The logistic regression model was used to classify Incomes as = 50k or >50k base
 After building the model for prediction, then I went on to split the data  into train and test data, the train was 80% of the data, and the test data consisting of the remaining 20%.
 
 ![Intepretation](https://github.com/daniel-ifenna/Adult_Income/blob/e8200fe44d66d76042fcebdfb380b2d6ed372e30/Logistic%20interpretation.png)
-Here’s a refined version of your statement for clarity and readability:  
 
-> **Intercept (-6.243):** The baseline log-odds of predicting ">50K" when all predictors are zero is negative, indicating a very low probability due to class imbalance. In the dataset, 75.2% of individuals earn "<=50K", while only 24.8% earn ">50K". The **p-value is less than 0.05**, meaning the model is statistically significant.
+
+
+
+ **Intercept (-6.243):** The baseline log-odds of predicting ">50K" when all predictors are zero is negative, indicating a very low probability due to class imbalance. In the dataset, 75.2% of individuals earn "<=50K", while only 24.8% earn ">50K". The **p-value is less than 0.05**, meaning the model is statistically significant.
 Using the model on the test data, an **accuracy of 84.8%** was achieved in predicting income levels.
 
 # CONCLUSION  
 The logistic regression model effectively predicts whether an individual's income is above or below $50K, achieving an accuracy of 84.8%. However, the model is affected by class imbalance, as the majority of individuals fall into the "<=50K" category (75.2%). The negative intercept (-6.243) further confirms that predicting ">50K" is less likely. Despite these challenges, the statistically significant p-values indicate that the model is meaningful.
 # RECOMMENDATIONS
-> Address Class Imbalance: Implement oversampling (SMOTE) or undersampling techniques to balance the dataset and improve model performance.
-> Try Alternative Models: Decision trees, random forests may capture non-linear relationships better than logistic regression.
+ Address Class Imbalance: Implement oversampling (SMOTE) or undersampling techniques to balance the dataset and improve model performance.
+ Try Alternative Models: Decision trees, random forests may capture non-linear relationships better than logistic regression.
 
 [View R_SCRIPT](https://github.com/daniel-ifenna/Adult_Income/blob/e8200fe44d66d76042fcebdfb380b2d6ed372e30/Logistic%20regression%20Adult%20income.R)
