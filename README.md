@@ -8,7 +8,7 @@ The data for your review [Download Data set](https://1drv.ms/x/c/fc11b36f16d1a62
 To ensure integrity and usability, I performed a data cleaning process
 1. **Handling NA Values:** The dataset contained various unknown information represented as "?" across different columns in the dataset. When importing into R, the `Na.strings` function was used to change "?" to NA values. Then all NA values were removed from the data.
 2. **Handling Duplicate Values:** The data contained 47 duplicate values. Duplicate values were removed to maintain data integrity.
-3. **COLUMN TRANSFORMATION:** The column `income` was transformed from text to a factor to improve prediction accuracy.
+3. **Column Transformation:** The column `income` was transformed from text to a factor to improve prediction accuracy.
 
 Data cleaned [download cleaned version](https://1drv.ms/x/c/fc11b36f16d1a624/EdaIgLQjcytNkTwEAPboezgB6lEkzzUMd6iw5rwWZRg3TQ?e=8Obw8f)
 
@@ -16,7 +16,6 @@ Data cleaned [download cleaned version](https://1drv.ms/x/c/fc11b36f16d1a624/Eda
 # Predicting Income Success
 The logistic regression model was used to classify Incomes as = 50k or >50k based on all factors except `native.country`, `race`, and `gender`. As the summary result showed, these columns proved to be insignificant in predicting Income.
 After building the model for prediction, then I went on to split the data  into train and test data, the train was 80% of the data, and the test data consisting of the remaining 20%.
-
 ![Intepretation](https://github.com/daniel-ifenna/Adult_Income/blob/e8200fe44d66d76042fcebdfb380b2d6ed372e30/Logistic%20interpretation.png)
 
 
