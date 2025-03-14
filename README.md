@@ -19,13 +19,13 @@ After building the model for prediction, then I went on to split the data  into 
 
 
 
-![](Logistic%20interpretation.png)
+![](Model%20summary.png)
 
 
 
 
- **Intercept (-6.243):** The baseline log-odds of predicting ">50K" when all predictors are zero is negative, indicating a very low probability due to class imbalance. In the dataset, 75.2% of individuals earn "<=50K", while only 24.8% earn ">50K". The **p-value is less than 0.05**, meaning the model is statistically significant.
-Using the model on the test data, an **accuracy of 84.8%** was achieved in predicting income levels.
+ **Intercept (-6.191):** The baseline log-odds of predicting ">50K" when all predictors are zero are negative, indicating a very low probability due to class imbalance. In the dataset, 75.2% of individuals earn "= 50K," while only 24.8% earn ">50K." The **p-value is less than 0.05**, meaning the model is statistically significant.
+Using the model on the test data, income levels were predicted with an accuracy of 84.8%.
 
 # CONCLUSION  
 The logistic regression model effectively predicts whether an individual's income is above or below $50K, achieving an accuracy of 84.8%. However, the model is affected by class imbalance, as the majority of individuals fall into the "<=50K" category (75.2%). The negative intercept (-6.243) further confirms that predicting ">50K" is less likely. Despite these challenges, the statistically significant p-values indicate that the model is meaningful.
