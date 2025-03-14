@@ -13,10 +13,6 @@ sum(duplicated((Cleaned_income)))
 Income_clean <- Cleaned_income[!duplicated(Cleaned_income), ]
 sum(duplicated((Income_clean)))
 
-#Building Logistic regression 
-Model<- glm(income ~., data = Income_clean[-c(8,9,10,14)], family = binomial)
-summary(Model)
-
 #Testing predictive model
 library(rsample)
 set.seed(123)
@@ -25,7 +21,11 @@ Split_income <- initial_split(data= Income_clean, 0.80, strata= native.country )
 Trained_data <- training(Split_income)
 Test_data<- testing(Split_income)
 
-Test_data$predicted<- predict(Model, Test_data, type = "response")
+#Building Logistic regression 
+Model<- glm(income ~., data = Trained_data[-c(8,9,10,14)], family = binomial)
+summary(Model)
+
+Test_data$predicted<- predict(Model, Test_data[-c(8,9,10,14)], type = "response")
 Test_data$predicted<- ifelse(Test_data$predicted >.5, ">50k", "<=50k")
 
 s<-table(Test_data$income, Test_data$predicted)
