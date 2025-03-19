@@ -30,10 +30,11 @@ Using the model on the test data, income levels were predicted with an accuracy 
 
 ## Power BI Dashboard  
 ![](Adult%20income%20dashboard.png)
+[Dasboard](https://1drv.ms/u/c/fc11b36f16d1a624/EeytajyESglFgoyxnlAKiacBVY3j14z6aeBYdL8jm5EuLA?e=6UZlV7)
 ### Overview  
 To support the predictive analysis of **income classification**, a Power BI dashboard was created to visualize key income patterns based on education, gender, and geographic distribution. The dashboard provides insights into the factors influencing income levels.  
 
-### 🔹 Key Visuals & Insights  
+### Key Visuals & Insights  
 
 ####  Income Distribution by Country  
 - **Visual Type:** Map  
